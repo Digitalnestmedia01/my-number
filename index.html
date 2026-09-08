@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Number</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .number {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 25px 0;
+      user-select: text;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 14px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Contact Number</h1>
+
+  <div class="number" id="number">7009470687</div>
+
+  <button onclick="copyNumber()">Copy Number</button>
+
+  <script>
+    function copyNumber() {
+      navigator.clipboard.writeText(
+        document.getElementById("number").innerText
+      );
+      alert("Number copied!");
+    }
+  </script>
+
+</body>
+</html>
