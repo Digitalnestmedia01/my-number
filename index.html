@@ -1,48 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Number</title>
+  <title>Shahil's Contact</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      background: #f5f5f5;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: auto;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-bottom: 8px;
     }
 
     .number {
-      font-size: 28px;
+      font-size: 22px;
       font-weight: bold;
-      margin: 25px 0;
-      user-select: text;
+      margin-bottom: 25px;
     }
 
-    button {
-      font-size: 18px;
-      padding: 14px 25px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+    .button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .call {
+      background: #222;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .instagram {
+      background: #E1306C;
+    }
+
+    .snapchat {
+      background: #FFFC00;
+      color: black;
+    }
+
+    .review {
+      background: #4285F4;
+    }
+
+    .maps {
+      background: #34A853;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Contact Number</h1>
+  <div class="container">
 
-  <div class="number" id="number">7009470687</div>
+    <h1>Shahil's Contact</h1>
 
-  <button onclick="copyNumber()">Copy Number</button>
+    <div class="number">
+      7009470687
+    </div>
 
-  <script>
-    function copyNumber() {
-      navigator.clipboard.writeText(
-        document.getElementById("number").innerText
-      );
-      alert("Number copied!");
-    }
-  </script>
+    <a class="button call" href="tel:+917009470687">
+      📞 Call Me
+    </a>
+
+    <a class="button whatsapp"
+       href="https://wa.me/917009470687"
+       target="_blank">
+      💬 WhatsApp Me
+    </a>
+
+    <a class="button instagram"
+       href="https://www.instagram.com/shahil_dhindsa08/"
+       target="_blank">
+      📸 Instagram
+    </a>
+
+    <a class="button snapchat"
+       href="https://www.snapchat.com/add/dhindsaa_08"
+       target="_blank">
+      👻 Snapchat
+    </a>
+
+    <a class="button review"
+       href="https://maps.app.goo.gl/QCT3MUH9Px8vfrpT9?g_st=ic"
+       target="_blank">
+      ⭐ Google Review
+    </a>
+
+    <a class="button maps"
+       href="https://maps.app.goo.gl/QCT3MUH9Px8vfrpT9?g_st=ic"
+       target="_blank">
+      📍 Google Maps
+    </a>
+
+  </div>
 
 </body>
 </html>
