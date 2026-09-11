@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
   <style>
     :root {
       --background: #0b0d12;
+      --card: rgba(255, 255, 255, 0.07);
       --border: rgba(255, 255, 255, 0.12);
       --text: #ffffff;
       --muted: #9da3ae;
@@ -49,8 +51,6 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.08);
       animation: fadeIn 0.7s ease;
     }
-
-    /* Profile */
 
     .profile {
       text-align: center;
@@ -96,8 +96,6 @@
       color: #7f8794;
       font-size: 13px;
     }
-
-    /* Buttons */
 
     .links {
       display: flex;
@@ -174,18 +172,6 @@
       color: #25D366;
     }
 
-    .group .icon {
-      color: #25D366;
-    }
-
-    .instagram .icon {
-      color: #ff5c9a;
-    }
-
-    .snapchat .icon {
-      color: #ffe600;
-    }
-
     .review .icon {
       color: #4285F4;
     }
@@ -194,7 +180,9 @@
       color: #34A853;
     }
 
-    /* Google Review */
+    .group .icon {
+      color: #25D366;
+    }
 
     .review {
       background: linear-gradient(
@@ -213,8 +201,6 @@
         rgba(255, 255, 255, 0.08)
       );
     }
-
-    /* Footer */
 
     .footer {
       text-align: center;
@@ -263,7 +249,6 @@
 
     <section class="profile">
 
-      <!-- LOGO PLACEHOLDER -->
       <div class="profile-image">
         FZ
       </div>
@@ -282,13 +267,13 @@
 
     <section class="links">
 
-      <!-- CALL -->
+      <!-- Call -->
       <a class="button call" href="tel:+919779418828">
         <span class="icon">☎</span>
         Call Us
       </a>
 
-      <!-- WHATSAPP -->
+      <!-- WhatsApp -->
       <a
         class="button whatsapp"
         href="https://wa.me/919779418828"
@@ -299,60 +284,15 @@
         WhatsApp Us
       </a>
 
-      <!-- WHATSAPP GROUP -->
-      <!-- Replace the link below with your actual WhatsApp Group link -->
+      <!-- WhatsApp Group -->
       <a
         class="button group"
-        href="YOUR_WHATSAPP_GROUP_LINK_HERE"
+        href="YOUR_WHATSAPP_GROUP_LINK"
         target="_blank"
         rel="noopener noreferrer"
       >
         <span class="icon">👥</span>
         Join WhatsApp Group
-      </a>
-
-      <!-- INSTAGRAM -->
-      <a
-        class="button instagram"
-        href="https://www.instagram.com/shahil_dhindsa08/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icon">◎</span>
-        Instagram
-      </a>
-
-      <!-- SNAPCHAT -->
-      <a
-        class="button snapchat"
-        href="https://www.snapchat.com/add/dhindsaa_08"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icon">👻</span>
-        Snapchat
-      </a>
-
-      <!-- GOOGLE REVIEW -->
-      <a
-        class="button review"
-        href="https://maps.app.goo.gl/QCT3MUH9Px8vfrpT9?g_st=ic"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icon">★</span>
-        Google Review
-      </a>
-
-      <!-- GOOGLE MAPS -->
-      <a
-        class="button maps"
-        href="https://maps.app.goo.gl/QCT3MUH9Px8vfrpT9?g_st=ic"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icon">●</span>
-        Google Maps
       </a>
 
     </section>
@@ -365,3 +305,4 @@
 
 </body>
 </html>
+```
